@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section id="addbutton">Add new</section>
+    <section class="Note">First save the data and than input the Excluded Dates after completing press done, your data will be automatically saved using Ajax</section>
+    <section id="table">    
+        <div id="grid">
+            <div>
+                <div style="background-color: orange;">Action</div>
+                <div style="background-color: orange;">ID</div>
+                <div style="background-color: orange;">Start Date</div>
+                <div style="background-color: orange;">End Date</div>
+                <div style="background-color: orange;">Month, year</div>
+                <div style="background-color: orange;">Dates Excluded</div>
+                <div style="background-color: orange;">Number Of Days</div>
+                <div style="background-color: orange;">Lead Count</div>
+                <div style="background-color: orange;">Expected DRR</div>
+                <div style="background-color: orange;">Last Updated</div>
+            </div>
+            <div>
+                <div>N/A</div>
+                <div>N/A</div>
+                <div id="start"><label for="date"><input type="date" name="date" id="selectDate"></label></div>
+                <div id="end"><label for="end date"><input type="date" name="end" id="EndDate"></label></div>
+                <div id="month"></div>
+                <div id="Dates"><label for="excluded"><input type="date" name="excluded" id="exclude"></label></div>
+                <div id="No_days"></div>
+                <div id="leadC"><label for="lead"><input type="number" name="lead" id="lead"></label></div>
+                <div id="expected"></div>
+                <div style="display: flex;"><button id="save" onclick="savetext()">Save</button><button id="cancel" onclick="remove()">Cancel</button></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
